@@ -1,0 +1,15 @@
+/*
+Theme Name: MR Reservations
+Theme URI: http://example.com/mr-reservations
+Author: Your Name
+Author URI: http://example.com
+Description: A custom theme for Maldives Resorts with search and booking functionality.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: mr-reservations
+Tags: custom-theme, resorts, booking
+*/
+
+@import url('css/styles.css');
+@import url('css/responsive.css');
