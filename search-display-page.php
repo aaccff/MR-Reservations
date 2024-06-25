@@ -1,6 +1,6 @@
-<?php
+<?php get_header(); ?>
+
 /* Template Name: Search Display Page */
-get_header(); ?>
 
 <main>
     <section id="search-filters">
