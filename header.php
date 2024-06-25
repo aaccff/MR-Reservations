@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maldives Resorts</title>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/styles.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsive.css">
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
     <header>
-        <h1>Maldives Resorts</h1>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/search-display-page">Search Resorts</a></li>
-            </ul>
-        </nav>
+        <div class="site-branding">
+            <?php if ( is_front_page() && is_home() ) : ?>
+                <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+            <?php else : ?>
+                <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+            <?php endif; ?>
+            <p class="site-description"><?php bloginfo( 'description' ); ?></p>
+        </div>
     </header>
