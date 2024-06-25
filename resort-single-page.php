@@ -1,6 +1,6 @@
-<?php
+<?php get_header(); ?>
+
 /* Template Name: Resort Single Page */
-get_header(); ?>
 
 <main>
     <section id="resort-details">
