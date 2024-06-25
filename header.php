@@ -1,19 +1,23 @@
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head>
-    <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="profile" href="http://gmpg.org/xfn/11">
-    <?php wp_head(); ?>
-</head>
-<body <?php body_class(); ?>>
-    <header>
-        <div class="site-branding">
-            <?php if ( is_front_page() && is_home() ) : ?>
-                <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-            <?php else : ?>
-                <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+    <footer>
+        <div class="footer-widgets">
+            <?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
+                <div class="footer-widget">
+                    <?php dynamic_sidebar( 'footer-1' ); ?>
+                </div>
             <?php endif; ?>
-            <p class="site-description"><?php bloginfo( 'description' ); ?></p>
+            <?php if ( is_active_sidebar( 'footer-2' ) ) : ?>
+                <div class="footer-widget">
+                    <?php dynamic_sidebar( 'footer-2' ); ?>
+                </div>
+            <?php endif; ?>
+            <?php if ( is_active_sidebar( 'footer-3' ) ) : ?>
+                <div class="footer-widget">
+                    <?php dynamic_sidebar( 'footer-3' ); ?>
+                </div>
+            <?php endif; ?>
         </div>
-    </header>
+        <p>&copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?>. All rights reserved.</p>
+    </footer>
+    <?php wp_footer(); ?>
+</body>
+</html>
