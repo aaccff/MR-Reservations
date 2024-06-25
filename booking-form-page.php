@@ -1,5 +1,7 @@
-<?php get_header(); ?>  
+<?php get_header(); ?> 
+
 /* Template Name: Booking Form Page */
+
 <main>
     <section id="booking-form">
         <form id="booking-form" action="/submit-booking" method="post">
