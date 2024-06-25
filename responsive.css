@@ -1,0 +1,10 @@
+/* Responsive styles here */
+@media (max-width: 768px) {
+    .resort-container {
+        flex-direction: column;
+    }
+
+    .resort-image, .resort-details, .resort-action {
+        width: 100%;
+    }
+}
