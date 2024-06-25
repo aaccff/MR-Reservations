@@ -3,4 +3,7 @@ document.getElementById('booking-form').addEventListener('submit', function(even
     const formData = new FormData(this);
 
     fetch('/submit-booking', {
-        method
+        method: 'POST',
+        body: formData
+    })
+    .
