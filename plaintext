@@ -1,0 +1,21 @@
+MR-Reservations/
+├── css/
+│   ├── responsive.css
+│   └── styles.css
+├── js/
+│   ├── bookingForm.js
+│   ├── fetchResorts.js
+│   ├── filters.js
+│   ├── resortDetails.js
+│   └── slider.js
+├── templates/
+│   ├── booking-form-page.php
+│   ├── footer.php
+│   ├── header.php
+│   ├── landing-page.php
+│   ├── resort-single-page.php
+│   └── search-display-page.php
+├── functions.php
+├── index.php
+├── style.css
+└── screenshot.png  # Optional, for theme preview
