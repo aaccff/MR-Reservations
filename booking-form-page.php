@@ -1,7 +1,9 @@
-<?php get_header(); ?> 
-
-/* Template Name: Booking Form Page */
-
+<?php
+/**
+ * Template Name: Booking Form Page
+ */
+get_header();
+?>
 <main>
     <section id="booking-form">
         <form id="booking-form" action="/submit-booking" method="post">
@@ -17,7 +19,4 @@
         </form>
     </section>
 </main>
-
-<script src="<?php echo get_template_directory_uri(); ?>/js/bookingForm.js"></script>
-
 <?php get_footer(); ?>
